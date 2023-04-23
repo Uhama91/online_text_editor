@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css"></link>
+    <title>WordSmith: text editor</title>
+  </head>
+  <body>
+    <div id="h1"><h1>WordSmith</h1></div>
+    <div>
+        <!--to modify color of words in placeholder-->
+        <button onclick="setColor()">Set Color</button> <input id="colorInput" type="value"/>
+
+        <!--underline words in the place holder-->
+        <button class="underline
+        " onclick="toggleUnderline()">Underline</button>
+
+        <button class="italic" onclick="toggleItalic()">Italic</button>
+
+        <button class="bold" onclick="toggleBold()">Bold</button>
+
+        <button class="mono" onclick="toggleMonospace()">Monospace</button>
+
+        <button onclick="removeFormat()">Remove Format</button>
+    </div>
+    <div>
+        <input id="words" style="height:100px; width:250px" placeholder="write your text here"/>
+    </div>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
